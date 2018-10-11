@@ -1,4 +1,5 @@
-<ion-card (click)="checked()" class="tile"
-    [ngClass]="{checked : tile.checked}">
+<ion-card (click)="checked()"
+    class="tile"
+    [ngClass]="{checked: tile.checked, default: tile.default}">
     <ion-card-content>{{tile.description}}</ion-card-content>
 </ion-card>

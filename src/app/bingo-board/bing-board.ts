@@ -109,7 +109,8 @@ export class BingoBoard {
 
   centerTile: Tile = {
     description: 'E-Sports Ready',
-    checked: true
+    checked: true,
+    default: true
   };
 
   tiles: Tile[];

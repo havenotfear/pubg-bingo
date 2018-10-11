@@ -12,6 +12,8 @@ export class BingoTile {
   constructor() {}
 
   checked() {
-    this.tile.checked = !this.tile.checked;
+    if (!this.tile.default) {
+      this.tile.checked = !this.tile.checked;
+    }
   }
 }
