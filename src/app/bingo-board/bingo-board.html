@@ -1,0 +1,39 @@
+<ion-button (click)="shuffleTiles()">Shuffle</ion-button>
+
+<ion-grid>
+    <ion-row>
+        <ion-col class="tile"
+            align-self-center
+            *ngFor="let tile of tiles.slice(0, 5)">
+            <bingo-tile [tile]="tile"></bingo-tile>
+        </ion-col>
+    </ion-row>
+    <ion-row>
+        <ion-col class="tile"
+            align-self-center
+            *ngFor="let tile of tiles.slice(5, 10)">
+            <bingo-tile [tile]="tile"></bingo-tile>
+        </ion-col>
+    </ion-row>
+    <ion-row>
+        <ion-col class="tile"
+            align-self-center
+            *ngFor="let tile of tiles.slice(10, 15)">
+            <bingo-tile [tile]="tile"></bingo-tile>
+        </ion-col>
+    </ion-row>
+    <ion-row>
+        <ion-col class="tile"
+            align-self-center
+            *ngFor="let tile of tiles.slice(15, 20)">
+            <bingo-tile [tile]="tile"></bingo-tile>
+        </ion-col>
+    </ion-row>
+    <ion-row>
+        <ion-col class="tile"
+            align-self-center
+            *ngFor="let tile of tiles.slice(20, 25)">
+            <bingo-tile [tile]="tile"></bingo-tile>
+        </ion-col>
+    </ion-row>
+</ion-grid>

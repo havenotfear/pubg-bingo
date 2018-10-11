@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Rooms
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item class="item"
+      detail
+      *ngFor="let room of rooms | async"
+      (click)="navigateToRoom(room.id)">
+      <ion-label>{{room.name}}</ion-label>
+      <div class="item-note"
+        slot="end">
+        {{room.description}}
+      </div>
+    </ion-item>
+  </ion-list>
+</ion-content>

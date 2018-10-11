@@ -1,0 +1,14 @@
+.tile {
+  height: 75px;
+  text-align: center;
+  margin: 0;
+  vertical-align: middle;
+}
+.checked {
+    background-image: url("assets/helmet.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    color: white;
+    background-color: #439889;
+}
